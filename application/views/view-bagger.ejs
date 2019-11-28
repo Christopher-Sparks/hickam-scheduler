@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bagger</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/css/Calendar-BS4-1.css">
+    <link rel="stylesheet" href="/css/Calendar-BS4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="/css/searchBox.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+    <script src="/js/Select-Search.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+    <h1>Bagger List</h1>
+    <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Name</th>
+                <th>Days</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Roles</th>
+                <th>Modify</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>13</td>
+                <td>Christopher Sparks</td>
+                <td>FRI-SAT-SUN</td>
+                <td>4058 Likini St Honolulu HI 96818</td>
+                <td>808-404-9807</td>
+                <td>Head, Express, Carts, Standard</td>
+                <td><input class="btn btn-primary btn-block" input type="button" value="Edit"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Roselle Mallari</td>
+                <td>SAT-SUN</td>
+                <td>Fake St Honolulu HI 96818</td>
+                <td>808-111-1111</td>
+                <td>Head, Express</td>
+                <td><input class="btn btn-primary btn-block" input type="button" value="Edit"></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Sydney</td>
+                <td>TUES-THURS-SAT-SUN</td>
+                <td>Fake St Honolulu HI 96818</td>
+                <td>808-111-1111</td>
+                <td>Head, Express, Standard</td>
+                <td><input class="btn btn-primary btn-block" input type="button" value="Edit"></td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Number</th>
+                <th>Name</th>
+                <th>Days</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Roles</th>
+                <th>Modify</th>
+            </tr>
+        </tfoot>
+    </table>
+    <section type="">
+    <h2>Add bagger</h2>
+    <form class="form-control center-block" action="">
+        <p>Bagger Number: <input type="text" name="number"></p>
+        <p>Name: <input type="text" name="name"></p>
+        <p>Days: <input type="text" name="days"></p>
+        <p>Address: <input type="text" name="address"></p>
+        <p>Phone Number: <input type="text" name="phone"></p>
+        <p>Roles: <input type="text" name="roles"></p>
+        <input class="btn btn-primary btn-block" input type="submit" value="Submit">
+    </form>
+    </section>
+    <script type="text/javascript" src="/js/bagger.js"></script>
+</body>
+</html>

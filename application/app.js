@@ -4,7 +4,8 @@ const expressValidator = require('express-validator');
 const bodyParser = require('body-parser');
 const connection = require('./models/connection');
 
-const main = require('./routes/route-main');
+const main = require('./routes/route-calendar');
+const bagger = require('./routes/route-bagger');
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use(expressSession({
 app.use(express.static('./assets'));
 
 app.use('/', main);
+app.use('/bagger', bagger);
 
 const port = 3000;
 app.listen(process.env.PORT || port);
