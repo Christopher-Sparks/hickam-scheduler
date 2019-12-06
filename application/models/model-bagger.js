@@ -3,9 +3,16 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const baggerSchema = new Schema({
-    title: String,
-    icon: String
-}, {collection: 'badge'});
+    number: Number,
+    name: String,
+    schedule: [{
+        day: {type: String},
+        period: {type: String}
+    }],
+    address: String,
+    phone: String,
+    roles: [String]
+}, {collection: 'bagger'});
 
 const bagger = mongoose.model('bagger', baggerSchema);
 
